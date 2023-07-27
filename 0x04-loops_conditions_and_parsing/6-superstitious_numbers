@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Writes 1 through 20 or "bad luck from China" or "bad luck or "bad luck from Italy"
+
+x=1
+
+while [ $x -le 20 ]
+do
+  echo "$x"
+  case $x in
+    "4") echo "bad luck from China";;
+    "9") echo "bad luck from Japan";;
+    "17") echo "bad luck from Italy";;
+  esac
+  (( x++ ))
+done
