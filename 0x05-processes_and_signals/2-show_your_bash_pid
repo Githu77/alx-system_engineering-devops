@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Writes lines with the word bash
+
+ps -a ux | grep bash

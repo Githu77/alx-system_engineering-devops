@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Destroys process 4-to_infinity_and_beyond, with a sleep 2 between and displays "I am invincible"
+
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+  trap 'echo "I am invincible"' SIGTERM 
+done

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Writes PLDs and process names
+
+pgrep -l bash
