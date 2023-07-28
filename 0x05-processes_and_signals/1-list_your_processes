@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Shows all running processes.
+# Shows all running processes even other users.
 
-ps -a uf
+ps -auxf
