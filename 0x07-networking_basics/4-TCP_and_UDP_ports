@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# shows listening porte
+# + as the PID
+
+netstat -l --program
