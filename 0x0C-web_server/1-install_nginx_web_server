@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-#nginx installation on your web-01 server
-#have return page saying Hello World
-
-apt-get update
-apt-get install -y nginx
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
-service nginx restart

@@ -1,2 +1,6 @@
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQD6wnEzjrAhjqYcqLJ+ZujzImVHKMQGty4QXn3dP+2PLKjtA2rDLvgTW8IIVv7aOxOnTkiIa39X6igargfCuyNQUod707v27zr6yaLEWvMn+rmSN5TCDXhPHOz8JlOqzFPQJ0EaDFgK6ATDTArNdBALFfxs9fAMW/MxhvA1Jfjgy53aPnPFugbHodx6ySETj6Qd69SdeTFwOOs4tsvsPaMbEJGaWGTbXnbVs8b27ht+f4Cm6uYdevgtbd4tPjdNPJHzaoI5CkGCEGsT4iIn45MwSrbkqab+L06OZXZb+7B0fL49GSoX5qLv/fJgX/TCE9gvS6icKufYpXyxCrn0tfwIgv8KQBx7VzvwvK3KNhhNedQQQq4OGMrIu1Cd629tRsBjtcgwxq5AuHvvsd7rI7JfZDVAaPwVn9EkY2ljQl2x/1v02OFyta+HEBi7dRmslgnMPp5evnZcy5aUq1RUzFPaZfvcNFP9XIgjH+Emd7N9iqmAAnwYmZq+WfljU7VjF2s= githu@githu-VirtualBox
+#!/usr/bin/env bash
+# Parses Apache log files in list format.
+#   Displays the IP and HTTP status code.
 
+awk '{print $1 " " $9}' apache-access.log
