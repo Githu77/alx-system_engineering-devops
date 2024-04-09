@@ -1,0 +1,2 @@
+ssh -i ~/.ssh/school ubuntu@54.84.4.46 'ls ~/'
+sh -i ~/.ssh/school ubuntu@54.84.4.46 touch somefile.html
